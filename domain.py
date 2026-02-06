@@ -28,6 +28,7 @@ class Expense:
 class Group:
     id: str
     name: str
+    currency: str
     members: Set[User] = field(default_factory=set)
     expenses: List[Expense] = field(default_factory=list)
 
