@@ -4,7 +4,10 @@ from dataclasses import dataclass, field
 
 @dataclass(frozen=True)
 class User:
+    id: str
     name: str
+    email: str
+    password: str
 
 
 @dataclass
